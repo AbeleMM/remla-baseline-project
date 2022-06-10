@@ -2,6 +2,7 @@
 
 import re
 from ast import literal_eval
+from glob import iglob
 
 import nltk
 import pandas as pd
@@ -54,9 +55,10 @@ def main():
     test = pd.read_csv("data/test.tsv", sep="\t", dtype={"title": str})
     test = test[["title"]]
 
-    extra = read_data("data/extra.tsv")
-    train = pd.concat([train, extra], copy=False, ignore_index=True)
-    validation = pd.concat([validation, extra], copy=False, ignore_index=True)
+    for name in iglob("data/extensions/*.tsv"):
+        ext = read_data(name)
+        train = pd.concat([train, ext], copy=False, ignore_index=True)
+        validation = pd.concat([validation, ext], copy=False, ignore_index=True)
 
     X_train, y_train = train["title"].values, train["tags"].values
     X_val, y_val = validation["title"].values, validation["tags"].values
