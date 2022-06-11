@@ -913,7 +913,7 @@ tool = ["click (>=6.0.0)"]
 
 [[package]]
 name = "google-cloud-bigquery"
-version = "2.34.3"
+version = "2.34.4"
 description = "Google BigQuery API client library"
 category = "dev"
 optional = false
@@ -924,9 +924,9 @@ google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["g
 google-cloud-core = ">=1.4.1,<3.0.0dev"
 google-resumable-media = ">=0.6.0,<3.0dev"
 grpcio = ">=1.38.1,<2.0dev"
-packaging = ">=14.3"
-proto-plus = ">=1.15.0"
-protobuf = ">=3.12.0"
+packaging = ">=14.3,<22.0dev"
+proto-plus = ">=1.15.0,<2.0.0dev"
+protobuf = ">=3.12.0,<4.0.0dev"
 python-dateutil = ">=2.7.2,<3.0dev"
 requests = ">=2.18.0,<3.0.0dev"
 
@@ -961,7 +961,7 @@ tests = ["freezegun"]
 
 [[package]]
 name = "google-cloud-bigtable"
-version = "1.7.1"
+version = "1.7.2"
 description = "Google Cloud Bigtable API client library"
 category = "dev"
 optional = false
@@ -971,6 +971,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc"]}
 google-cloud-core = ">=1.4.1,<3.0dev"
 grpc-google-iam-v1 = ">=0.12.3,<0.13dev"
+protobuf = "<4.0.0dev"
 
 [[package]]
 name = "google-cloud-core"
@@ -990,7 +991,7 @@ grpc = ["grpcio (>=1.8.2,<2.0dev)"]
 
 [[package]]
 name = "google-cloud-datastore"
-version = "1.15.4"
+version = "1.15.5"
 description = "Google Cloud Datastore API client library"
 category = "dev"
 optional = false
@@ -999,6 +1000,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 [package.dependencies]
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc"]}
 google-cloud-core = ">=1.4.0,<3.0dev"
+protobuf = "<4.0.0dev"
 
 [[package]]
 name = "google-cloud-dlp"
@@ -1018,7 +1020,7 @@ libcst = ["libcst (>=0.2.5)"]
 
 [[package]]
 name = "google-cloud-language"
-version = "1.3.1"
+version = "1.3.2"
 description = "Google Cloud Natural Language API client library"
 category = "dev"
 optional = false
@@ -1026,6 +1028,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [package.dependencies]
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc"]}
+protobuf = "<4.0.0dev"
 
 [[package]]
 name = "google-cloud-pubsub"
@@ -1074,7 +1077,7 @@ proto-plus = ">=1.15.0"
 
 [[package]]
 name = "google-cloud-spanner"
-version = "1.19.2"
+version = "1.19.3"
 description = "Cloud Spanner API client library"
 category = "dev"
 optional = false
@@ -1084,13 +1087,14 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc", "grpcgcp"]}
 google-cloud-core = ">=1.4.1,<3.0dev"
 grpc-google-iam-v1 = ">=0.12.3,<0.13dev"
+protobuf = "<4.0.0dev"
 
 [package.extras]
 tracing = ["opentelemetry-api (==0.11b0)", "opentelemetry-sdk (==0.11b0)", "opentelemetry-instrumentation (==0.11b0)"]
 
 [[package]]
 name = "google-cloud-videointelligence"
-version = "1.16.2"
+version = "1.16.3"
 description = "Google Cloud Video Intelligence API client library"
 category = "dev"
 optional = false
@@ -1098,10 +1102,11 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [package.dependencies]
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc"]}
+protobuf = "<4.0.0dev"
 
 [[package]]
 name = "google-cloud-vision"
-version = "1.0.1"
+version = "1.0.2"
 description = "Cloud Vision API API client library"
 category = "dev"
 optional = false
@@ -1109,6 +1114,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [package.dependencies]
 google-api-core = {version = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev", extras = ["grpc"]}
+protobuf = "<4.0.0dev"
 
 [[package]]
 name = "google-crc32c"
@@ -1628,7 +1634,7 @@ python-versions = ">=2.6"
 
 [[package]]
 name = "phonenumbers"
-version = "8.12.49"
+version = "8.12.50"
 description = "Python version of Google's common library for parsing, formatting, storing and validating international phone numbers."
 category = "dev"
 optional = false
@@ -2046,20 +2052,20 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "requests"
-version = "2.27.1"
+version = "2.28.0"
 description = "Python HTTP for Humans."
 category = "dev"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+python-versions = ">=3.7, <4"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
-charset-normalizer = {version = ">=2.0.0,<2.1.0", markers = "python_version >= \"3\""}
-idna = {version = ">=2.5,<4", markers = "python_version >= \"3\""}
+charset-normalizer = ">=2.0.0,<2.1.0"
+idna = ">=2.5,<4"
 urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
-socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 
 [[package]]
@@ -2373,7 +2379,7 @@ protobuf = ">=3.13,<4"
 
 [[package]]
 name = "tensorflow-serving-api"
-version = "2.8.2"
+version = "2.9.0"
 description = "TensorFlow Serving Python API."
 category = "dev"
 optional = false
@@ -2382,7 +2388,7 @@ python-versions = "*"
 [package.dependencies]
 grpcio = ">=1.0,<2"
 protobuf = ">=3.6.0"
-tensorflow = ">=2.8.2,<3"
+tensorflow = ">=2.9.0,<3"
 
 [[package]]
 name = "termcolor"
@@ -3140,32 +3146,32 @@ google-auth-oauthlib = [
     {file = "google_auth_oauthlib-0.4.6-py2.py3-none-any.whl", hash = "sha256:3f2a6e802eebbb6fb736a370fbf3b055edcb6b52878bf2f26330b5e041316c73"},
 ]
 google-cloud-bigquery = [
-    {file = "google-cloud-bigquery-2.34.3.tar.gz", hash = "sha256:0ab6362a86a29f17e379e886b49544bc0b75626902a48d12c13a0b47f821bf4a"},
-    {file = "google_cloud_bigquery-2.34.3-py2.py3-none-any.whl", hash = "sha256:d702c609e57a3d7d7fbd37e4913d8d0e0e77eabaf7119037ceaa33e2370d7dcb"},
+    {file = "google-cloud-bigquery-2.34.4.tar.gz", hash = "sha256:14a4f996411556757b5d32f11a0ebf34257d6fc5c60d53fb66e674a63a7bf9ca"},
+    {file = "google_cloud_bigquery-2.34.4-py2.py3-none-any.whl", hash = "sha256:7c6dc11e6bd65a5981a8bc18a472e6132e9aaa1fa5363f1680a9425dd3868660"},
 ]
 google-cloud-bigquery-storage = [
     {file = "google-cloud-bigquery-storage-2.13.2.tar.gz", hash = "sha256:ac4ce734e805aca7e73a69617b14d31e690a113446136e92292a74e1d8b3e3b2"},
     {file = "google_cloud_bigquery_storage-2.13.2-py2.py3-none-any.whl", hash = "sha256:b3f72c66e6c92afdb8ba76b81cceba1969d217a205c35acb4eb1a5257b7fd21d"},
 ]
 google-cloud-bigtable = [
-    {file = "google-cloud-bigtable-1.7.1.tar.gz", hash = "sha256:4fd85bf3f63a31c48a95ffbfb0aa7eeea950c2dc0130cd3441f2e3d2a3183e32"},
-    {file = "google_cloud_bigtable-1.7.1-py2.py3-none-any.whl", hash = "sha256:88dbec5abe6e5f39f81a4124e2a443306da1a046a9a43dd639519f2de4e9f011"},
+    {file = "google-cloud-bigtable-1.7.2.tar.gz", hash = "sha256:5e63eaed5eb0f4cd38e7daacae4042961aaf39adbcd856da2e5d3abda9f5d1bb"},
+    {file = "google_cloud_bigtable-1.7.2-py2.py3-none-any.whl", hash = "sha256:fc5306da65cd9b34d6cff59cf6896904b7775693de05b7e230814247175056f1"},
 ]
 google-cloud-core = [
     {file = "google-cloud-core-1.7.2.tar.gz", hash = "sha256:b1030aadcbb2aeb4ee51475426351af83c1072456b918fb8fdb80666c4bb63b5"},
     {file = "google_cloud_core-1.7.2-py2.py3-none-any.whl", hash = "sha256:5b77935f3d9573e27007749a3b522f08d764c5b5930ff1527b2ab2743e9f0c15"},
 ]
 google-cloud-datastore = [
-    {file = "google-cloud-datastore-1.15.4.tar.gz", hash = "sha256:be2cc7eac38ec1ed658f39a8ffb374c161227abbfc848260acdfaa5f698710b2"},
-    {file = "google_cloud_datastore-1.15.4-py2.py3-none-any.whl", hash = "sha256:0d9417a977b21d06d2eed2ff5c2e8874a7e2eb44eecdfc64ac81469f0375c55a"},
+    {file = "google-cloud-datastore-1.15.5.tar.gz", hash = "sha256:dadca1631088b7a737f311df87574a417f254ce71d6a98080f36f35bdc96b30f"},
+    {file = "google_cloud_datastore-1.15.5-py2.py3-none-any.whl", hash = "sha256:cd072adeffab48a67291ccd3d3946814fe2dc814820008ba21662ad9b689f447"},
 ]
 google-cloud-dlp = [
     {file = "google-cloud-dlp-3.7.1.tar.gz", hash = "sha256:ab623792ef1fe79ad2250139a220edb50389158b463e39ab5bb86dad9f8130f5"},
     {file = "google_cloud_dlp-3.7.1-py2.py3-none-any.whl", hash = "sha256:7596d4016e563caa19b4cf27e1399c977b78cbc53f6e480ed0f57b505ffa363e"},
 ]
 google-cloud-language = [
-    {file = "google-cloud-language-1.3.1.tar.gz", hash = "sha256:b47e6c4a1fde4b977c0bf69749e0aec04c4dc57c0043538914dedc736e81b7c1"},
-    {file = "google_cloud_language-1.3.1-py2.py3-none-any.whl", hash = "sha256:36ab9edc9ee80263c20dbb0c321e76a9896bcb458be70a53f9dbc38c94b69a40"},
+    {file = "google-cloud-language-1.3.2.tar.gz", hash = "sha256:341dea1a3eb267ac42e4749c63e57fd3a6e33f5614f0b74a10f9ab8e7593ca40"},
+    {file = "google_cloud_language-1.3.2-py2.py3-none-any.whl", hash = "sha256:279ad7116a546c04fad80abb99a0fc7581a6548e54cf4e83c50657716fb33306"},
 ]
 google-cloud-pubsub = [
     {file = "google-cloud-pubsub-2.13.0.tar.gz", hash = "sha256:a5c2e05c83d60bb17a152e599e7f4324c9ffb6c8cda44ffb6250b16280c383e6"},
@@ -3180,16 +3186,16 @@ google-cloud-recommendations-ai = [
     {file = "google_cloud_recommendations_ai-0.2.0-py2.py3-none-any.whl", hash = "sha256:b2180516386edfa5ec0cc1050cc7c58ac1a7fd085a178c8edc2bbe0b6ebc925f"},
 ]
 google-cloud-spanner = [
-    {file = "google-cloud-spanner-1.19.2.tar.gz", hash = "sha256:4de56ff6f79607d52ac020a44f7163542d0b84a6864b9de400cbd69d4c1417c1"},
-    {file = "google_cloud_spanner-1.19.2-py2.py3-none-any.whl", hash = "sha256:685b5faca26f0a18bfbb333be2aa14584d81e1899f8d4e5847fe7eddab7a585d"},
+    {file = "google-cloud-spanner-1.19.3.tar.gz", hash = "sha256:ae62b2c2367e7cc8986a9ef21f545a9d1e7f610565951b9760ac93378a32acd0"},
+    {file = "google_cloud_spanner-1.19.3-py2.py3-none-any.whl", hash = "sha256:3acb417ade9b2e670324c00ee25f46340cc1089d33bb2d9aeb65b7107d47f048"},
 ]
 google-cloud-videointelligence = [
-    {file = "google-cloud-videointelligence-1.16.2.tar.gz", hash = "sha256:cf88ce17dc7c3cc1aed3be754efbcaff16286a71a35bd3992f1f26e2f686f80e"},
-    {file = "google_cloud_videointelligence-1.16.2-py2.py3-none-any.whl", hash = "sha256:129dd8109d5e4e53fa6f2fd6f065b09b78168922cec74e50f3ac56b639c25f92"},
+    {file = "google-cloud-videointelligence-1.16.3.tar.gz", hash = "sha256:3ed7b8864d44b0afabf66842233e96f35f9712cf38c5e9ad70b2e41802071d35"},
+    {file = "google_cloud_videointelligence-1.16.3-py2.py3-none-any.whl", hash = "sha256:d66cc528ac362867af10442d426b51a86bd59ddc9b8ee874c8849db0c60dc447"},
 ]
 google-cloud-vision = [
-    {file = "google-cloud-vision-1.0.1.tar.gz", hash = "sha256:7bb1e327f0cdb3133a745afb10238f66c09387d34ddd7de27150c79de4bd5da0"},
-    {file = "google_cloud_vision-1.0.1-py2.py3-none-any.whl", hash = "sha256:db3f07ba1d23892ff1eaea70f02dcd188530f5e95d7092c8edf7e1e84c384efc"},
+    {file = "google-cloud-vision-1.0.2.tar.gz", hash = "sha256:0c349f771ee49027781e05df2efa6fc1a8b4f7d1d74ab57675f9151a04b01d6f"},
+    {file = "google_cloud_vision-1.0.2-py2.py3-none-any.whl", hash = "sha256:a4dbe100851106be72f3fc10bf728264f4c2c259282a72c867a39e588ec16b5a"},
 ]
 google-crc32c = [
     {file = "google-crc32c-1.3.0.tar.gz", hash = "sha256:276de6273eb074a35bc598f8efbc00c7869c5cf2e29c90748fccc8c898c244df"},
@@ -3739,8 +3745,8 @@ pbr = [
     {file = "pbr-5.9.0.tar.gz", hash = "sha256:e8dca2f4b43560edef58813969f52a56cef023146cbb8931626db80e6c1c4308"},
 ]
 phonenumbers = [
-    {file = "phonenumbers-8.12.49-py2.py3-none-any.whl", hash = "sha256:d169ec284ace7a82ec087fcc0c3f40da86b89a50950f143fc53a47e5f77ff805"},
-    {file = "phonenumbers-8.12.49.tar.gz", hash = "sha256:c691661615ebdc90beff458f8fbf7c0bfb78f21a0aa40a256cc2ba6da41e393b"},
+    {file = "phonenumbers-8.12.50-py2.py3-none-any.whl", hash = "sha256:56713403b4160b59ea1fef4e842ddeb70931055146d794d371b60cd4b5f05fb8"},
+    {file = "phonenumbers-8.12.50.tar.gz", hash = "sha256:f00d67f20875804f4fade4803a9438294029982ac929c6ba303e1f0290cf5d45"},
 ]
 platformdirs = [
     {file = "platformdirs-2.5.2-py3-none-any.whl", hash = "sha256:027d8e83a2d7de06bbac4e5ef7e023c02b863d7ea5d079477e722bb41ab25788"},
@@ -4225,8 +4231,8 @@ regex = [
     {file = "regex-2022.6.2.tar.gz", hash = "sha256:f7b43acb2c46fb2cd506965b2d9cf4c5e64c9c612bac26c1187933c7296bf08c"},
 ]
 requests = [
-    {file = "requests-2.27.1-py2.py3-none-any.whl", hash = "sha256:f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"},
-    {file = "requests-2.27.1.tar.gz", hash = "sha256:68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61"},
+    {file = "requests-2.28.0-py3-none-any.whl", hash = "sha256:bc7861137fbce630f17b03d3ad02ad0bf978c844f3536d0edda6499dafce2b6f"},
+    {file = "requests-2.28.0.tar.gz", hash = "sha256:d568723a7ebd25875d8d1eaf5dfa068cd2fc8194b2e483d7b1f7c81918dbec6b"},
 ]
 requests-oauthlib = [
     {file = "requests-oauthlib-1.3.1.tar.gz", hash = "sha256:75beac4a47881eeb94d5ea5d6ad31ef88856affe2332b9aafb52c6452ccf0d7a"},
@@ -4423,7 +4429,7 @@ tensorflow-metadata = [
     {file = "tensorflow_metadata-1.8.0-py3-none-any.whl", hash = "sha256:65c47207efeaff6b514196d2d420dbb7762f0a07336e1798731f90c81541ab11"},
 ]
 tensorflow-serving-api = [
-    {file = "tensorflow_serving_api-2.8.2-py2.py3-none-any.whl", hash = "sha256:e737ecc5459621f82cceb5fb6ce5e8f734c6cc0f1beafa764621352eaf9bb571"},
+    {file = "tensorflow_serving_api-2.9.0-py2.py3-none-any.whl", hash = "sha256:94165b9ed1ae6949e6c46709e86f3761f7041248653ad13d20677b220e6dc676"},
 ]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},

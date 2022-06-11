@@ -3,9 +3,10 @@ stages:
   preprocess:
     cmd: python src/preprocess.py
     deps:
-    - path: data/extra.tsv
-      md5: 5b781e9d63d274228cf34060098cef75
+    - path: data/extensions/
+      md5: 2b1ca58b19574e2d3143e9a73dff03d1.dir
       size: 587
+      nfiles: 1
     - path: data/test.tsv
       md5: f06925444bd9e4b12b382e0e267345a7
       size: 1061380
@@ -16,8 +17,8 @@ stages:
       md5: 508e1de849c33ba2f38f0b118590a4cd
       size: 2196271
     - path: src/preprocess.py
-      md5: 6be6bdb0675c5356ca8545965cabd5da
-      size: 3181
+      md5: e370ccf2f067e062a5c54ef48dafdc28
+      size: 3248
     outs:
     - path: output/sorted_tags.joblib
       md5: f0d6503b1be02b4e8b6d6ff8311f7d7d
@@ -26,7 +27,7 @@ stages:
       md5: 99f8d7035ca2058ef9bb11c1c19587aa
       size: 1652863
     - path: output/tfidf_vectorizer.joblib
-      md5: f996ea2dacc065d93060c825ae5467aa
+      md5: 164c85b1ee08ed05d75e044c7271ed8c
       size: 5382060
     - path: output/train_tfidf.joblib
       md5: 8160b1aa4fcdf4fc40d1c5215e96d4fd

@@ -2,7 +2,7 @@ stages:
   preprocess:
     cmd: python src/preprocess.py
     deps:
-    - data/extra.tsv
+    - data/extensions/
     - data/test.tsv
     - data/train.tsv
     - data/validation.tsv
